@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Test>
+  <Question Type="MCQ" Number="1">
+    <QuestionText>
+      What is XML?
+    </QuestionText>
+    <Option1 Answer="No">
+      avhjvhjvhjv
+    </Option1>
+    <Option2 Answer="Yes">
+      vvhvnvnmmn
+    </Option2>
+    <Option3 Answer="No">
+      avhjvhjvhjv
+    </Option3>
+    <Option4 Answer="No">
+      avhjvhjvhjv
+    </Option4>
+  </Question>
+  <Question Type="Text" Number="2">
+    <QuestionText>
+      What is XML?
+    </QuestionText>
+    <Answer>
+      sfasdfsadfsdf
+    </Answer>
+  </Question>
+  <Question Type="EssayText" Number="3">
+    <QuestionText>
+      What is XML?
+    </QuestionText>
+    <NumberOfParagraphs>
+      4
+    </NumberOfParagraphs>
+    <TotalNumberOfWords>
+      1000
+    </TotalNumberOfWords>
+    <Answer>
+      <Keyword>
+        a
+      </Keyword>
+      <Keyword>
+        b
+      </Keyword>
+      <Keyword>
+        c
+      </Keyword>
+      <Keyword>
+        d
+      </Keyword>
+      <Keyword>
+        e
+      </Keyword>
+      <Keyword>
+        f
+      </Keyword>
+      <Keyword>
+        g
+      </Keyword>
+      <Keyword>
+        h
+      </Keyword>
+    </Answer>
+  </Question>
+</Test>
