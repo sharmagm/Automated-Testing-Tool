@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+  <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Test">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" name="Question">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="QuestionText" type="xs:string" />                
+                <xs:element minOccurs="0" name="Answer">
+                  <xs:complexType mixed="true">
+                    <xs:sequence minOccurs="0">
+                      <xs:element maxOccurs="unbounded" name="Keyword" type="xs:string" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element minOccurs="0" name="Option1">
+                  <xs:complexType>
+                    <xs:simpleContent>
+                      <xs:extension base="xs:string">
+                        <xs:attribute name="Answer" type="xs:string" use="required" />
+                      </xs:extension>
+                    </xs:simpleContent>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element minOccurs="0" name="Option2">
+                  <xs:complexType>
+                    <xs:simpleContent>
+                      <xs:extension base="xs:string">
+                        <xs:attribute name="Answer" type="xs:string" use="required" />
+                      </xs:extension>
+                    </xs:simpleContent>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element minOccurs="0" name="Option3">
+                  <xs:complexType>
+                    <xs:simpleContent>
+                      <xs:extension base="xs:string">
+                        <xs:attribute name="Answer" type="xs:string" use="required" />
+                      </xs:extension>
+                    </xs:simpleContent>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element minOccurs="0" name="Option4">
+                  <xs:complexType>
+                    <xs:simpleContent>
+                      <xs:extension base="xs:string">
+                        <xs:attribute name="Answer" type="xs:string" use="required" />
+                      </xs:extension>
+                    </xs:simpleContent>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+              <xs:attribute name="NumberOfParagraphs" type="xs:unsignedByte" use="required" />
+              <xs:attribute name="TotalNumberOfWords" type="xs:unsignedByte" use="required" />
+              <xs:attribute name="Type" type="xs:string" use="required" />
+              <xs:attribute name="Number" type="xs:unsignedByte" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+</xs:schema>
